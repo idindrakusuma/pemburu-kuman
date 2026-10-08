@@ -46,9 +46,11 @@ await page.setContent(og, { waitUntil: 'networkidle' });
 await page.evaluate(() => document.fonts.ready);
 await page.screenshot({ path: out('images/og-image.png') });
 for (const [name, size, full] of [['icon-512.png', 512, 1], ['icon-192.png', 192, 1], ['apple-touch-icon.png', 180, 1], ['favicon-32.png', 32, 0]]) {
-  await page.setViewportSize({ width: size, height: size });
-  await page.setContent(icon(size, full));
-  await page.locator('#c').screenshot({ path: out('icons/' + name), omitBackground: true });
+  // Page baru per ikon: setContent di page yang sama tidak membuang deklarasi `const`,
+  // jadi script kedua gagal (identifier sudah ada) dan canvas tetap kosong.
+  const ip = await browser.newPage({ viewport: { width: size, height: size } });
+  await ip.setContent(icon(size, full));
+  await ip.locator('#c').screenshot({ path: out('icons/' + name), omitBackground: true });
 }
 await browser.close();
 console.log('OK: og-image + ikon dibuat ulang');
