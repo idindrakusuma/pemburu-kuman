@@ -6,9 +6,11 @@
 
 **Game kamera untuk anak: usir kuman lucu sambil cuci tangan dan sikat gigi.**
 
-[▶️ Main sekarang](https://pemburu-kuman.indrakusuma.dev) · Dibuat oleh [Indra Kusuma](https://indrakusuma.dev)
+[▶️ Main sekarang](https://mini-games.indrakusuma.dev/pemburu-kuman/) · Dibuat oleh [Indra Kusuma](https://indrakusuma.dev)
 
 </div>
+
+> **Pindah rumah:** Pemburu Kuman sekarang dikembangkan di repo [mini-games](https://github.com/idindrakusuma/mini-games) dan tersedia di [mini-games.indrakusuma.dev/pemburu-kuman](https://mini-games.indrakusuma.dev/pemburu-kuman/). Repo ini dibekukan; situs lamanya tetap online.
 
 ## Latar Belakang
 
