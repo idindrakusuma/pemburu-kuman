@@ -12,56 +12,42 @@
 
 ## Tentang
 
-Pemburu Kuman membuat rutinitas cuci tangan dan sikat gigi jadi permainan. Anak mengarahkan kamera ke tangan atau gigi, kuman kartun muncul menempel di sana, lalu mereka mengusirnya dengan menggosok tangan pakai sabun atau menyikat gigi. Setiap ronde yang selesai memberi satu ⭐ bintang.
+Pemburu Kuman membuat rutinitas cuci tangan dan sikat gigi jadi permainan. Anak mengarahkan kamera ke tangan atau gigi, lalu kuman kartun muncul menempel di sana. Untuk mengusirnya, anak harus menggosok tangan pakai sabun atau menyikat gigi sampai semua kuman kabur.
 
-### Mode permainan
+## Fitur
 
-| Mode | Cara main |
-| --- | --- |
-| 🖐️ **Tangan** | Tunjukkan tangan ke kamera, lalu gosok-gosok sampai 6 kuman kabur. |
-| 🦷 **Gigi** | Buka mulut dan senyum lebar, lalu sikat gigi sampai 5 kuman kabur. |
+### 🖐️ Mode Tangan
+Tunjukkan tangan ke kamera, lalu kuman muncul menempel di kulit. Gosok-gosok tangan seperti sedang cuci tangan pakai sabun sampai 6 kuman kabur.
 
-Kuman juga bisa ditekan dan digosok pakai jari di layar. Kalau kamera tidak tersedia, anak tetap bisa main dengan gambar tangan atau mulut kartun.
+### 🦷 Mode Gigi
+Buka mulut dan senyum lebar ke kamera, lalu kuman muncul di gigi. Sikat gigi sampai 5 kuman kabur.
 
-### Privasi
+### 🦠 Kuman yang hidup
+- Kuman bergoyang, berkedip, dan matanya melirik ke sana kemari.
+- Kuman ikut bergerak menempel di tangan atau gigi.
+- Kuman mengejek sebelum diusir ("Jangan pakai sabun yaa!") dan teriak waktu kabur ("Ampun sabun!").
+- Ada lima warna kuman dengan ukuran berbeda-beda.
 
-Kamera hanya dipakai di layar permainan. Deteksi tangan dan gigi berjalan sepenuhnya di perangkat, dan tidak ada foto atau video yang disimpan maupun dikirim. Jumlah bintang hanya tersimpan di browser (`localStorage`).
+### 👆 Main pakai jari
+Selain menggosok di depan kamera, anak juga bisa menekan dan menggosok kuman langsung di layar. Setiap gosokan mengeluarkan gelembung sabun.
 
-## Teknologi
+### ⭐ Hadiah bintang
+Setiap ronde yang selesai memberi satu bintang. Jumlah bintang tersimpan di perangkat, jadi anak bisa terus mengumpulkannya.
 
-- Satu file `index.html` berisi HTML, CSS, dan JavaScript, tanpa framework dan tanpa proses build.
-- Grafis kuman digambar dengan Canvas 2D.
-- Kamera memakai `getUserMedia`. Deteksi kulit dan gigi memakai warna YCbCr dan deteksi gerakan antar-frame.
-- Efek suara dibuat dengan Web Audio API, tanpa file audio.
+### 🔊 Efek suara & animasi
+Ada bunyi "pop" saat kuman kabur dan nada kemenangan di akhir ronde, diiringi hujan bintang dan gelembung sabun.
 
-## Struktur
+### 📷 Tetap bisa main tanpa kamera
+Kalau kamera tidak diizinkan atau tidak tersedia, anak tetap bisa main dengan gambar tangan atau mulut kartun. Ada juga tombol untuk ganti antara kamera depan dan belakang.
 
-```
-index.html            # game + meta SEO
-og-image.png          # thumbnail share (1200×630)
-favicon-32.png, apple-touch-icon.png, icon-192.png, icon-512.png
-site.webmanifest      # PWA manifest
-robots.txt, sitemap.xml, humans.txt
-netlify.toml          # header, cache, redirect
-```
+### 📱 Ramah anak & ponsel
+- Tombolnya besar, warnanya cerah, dan teksnya dalam Bahasa Indonesia yang sederhana.
+- Mendukung mode gelap.
+- Bisa dipasang ke layar utama HP seperti aplikasi.
+- Langsung main di browser tanpa install.
 
-## Jalankan lokal
-
-```sh
-npx serve .
-```
-
-Buka `http://localhost:3000`. Browser mengizinkan kamera di `localhost`.
-
-## Deploy
-
-Situs di-deploy ke Netlify dari branch `main`.
-
-1. Di Netlify, buka **Add new site → Import an existing project** lalu pilih repo ini.
-2. Kosongkan *Build command*. Folder publish `.` sudah diatur di `netlify.toml`.
-3. Di **Domain management**, tambahkan `pemburu-kuman.indrakusuma.dev`, lalu buat record DNS `CNAME pemburu-kuman → <nama-site>.netlify.app`.
-
-Kamera butuh HTTPS, dan Netlify otomatis memakai HTTPS. Kalau nama site Netlify bukan `pemburu-kuman`, sesuaikan redirect di `netlify.toml`.
+### 🔒 Privasi terjaga
+Kamera hanya dipakai di layar permainan. Deteksi tangan dan gigi berjalan sepenuhnya di perangkat, dan tidak ada foto atau video yang disimpan maupun dikirim ke mana pun.
 
 ## Pembuat
 
