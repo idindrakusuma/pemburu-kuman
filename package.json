@@ -1,0 +1,15 @@
+{
+  "name": "pemburu-kuman",
+  "private": true,
+  "description": "Game kamera untuk anak: usir kuman lucu sambil cuci tangan & sikat gigi.",
+  "author": "Indra Kusuma (https://indrakusuma.dev)",
+  "homepage": "https://pemburu-kuman.indrakusuma.dev",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve public",
+    "images": "node scripts/generate-images.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  }
+}

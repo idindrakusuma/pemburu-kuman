@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://pemburu-kuman.indrakusuma.dev"><img src="og-image.png" alt="Pemburu Kuman: tiga kuman kartun lucu berwarna hijau, ungu, dan pink" width="100%"></a>
+<a href="https://pemburu-kuman.indrakusuma.dev"><img src="public/assets/images/og-image.png" alt="Pemburu Kuman: tiga kuman kartun lucu berwarna hijau, ungu, dan pink" width="100%"></a>
 
 # Pemburu Kuman
 
