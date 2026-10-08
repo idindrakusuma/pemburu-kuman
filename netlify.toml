@@ -9,6 +9,23 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
+[[headers]]
   for = "/index.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Arahkan subdomain *.netlify.app ke domain utama (hindari konten duplikat)
+[[redirects]]
+  from = "https://pemburu-kuman.netlify.app/*"
+  to = "https://pemburu-kuman.indrakusuma.dev/:splat"
+  status = 301
+  force = true

@@ -1,5 +1,7 @@
 # Pemburu Kuman
 
+Dibuat oleh **Indra Kusuma** · https://pemburu-kuman.indrakusuma.dev
+
 Game edukasi untuk anak: arahkan kamera ke tangan atau gigi, lalu usir kuman lucu dengan sabun dan sikat gigi. Semua deteksi berjalan di perangkat; tidak ada foto/video yang disimpan atau dikirim.
 
 ## Deploy ke Netlify
@@ -22,3 +24,9 @@ Seret folder repo ini ke https://app.netlify.com/drop.
 npx serve .
 ```
 Buka `http://localhost:3000` (kamera diizinkan di `localhost`).
+
+## Domain & SEO
+
+- Domain: `pemburu-kuman.indrakusuma.dev`. Di Netlify: *Domain management → Add a domain*, lalu buat record DNS `CNAME pemburu-kuman → <nama-site>.netlify.app`.
+- Kalau nama site Netlify bukan `pemburu-kuman`, sesuaikan redirect di `netlify.toml`.
+- Sudah ada: meta description, canonical, Open Graph & Twitter card (`og-image.png` 1200×630), JSON-LD (`WebApplication`/`VideoGame`), favicon, `site.webmanifest`, `robots.txt`, `sitemap.xml`.
