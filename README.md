@@ -10,6 +10,10 @@
 
 </div>
 
+## Latar Belakang
+
+Anak balita zaman sekarang kritis. Bilang "tanganmu ada kumannya" saja tidak cukup, karena mereka baru percaya kalau sudah melihatnya sendiri. Pemburu Kuman memperlihatkan kuman itu lewat kamera, langsung di tangan dan gigi mereka, supaya cuci tangan dan sikat gigi jadi sesuatu yang mereka mau lakukan, bukan yang harus disuruh.
+
 ## Tentang
 
 Pemburu Kuman membuat rutinitas cuci tangan dan sikat gigi jadi permainan. Anak mengarahkan kamera ke tangan atau gigi, lalu kuman kartun muncul menempel di sana. Untuk mengusirnya, anak harus menggosok tangan pakai sabun atau menyikat gigi sampai semua kuman kabur.
